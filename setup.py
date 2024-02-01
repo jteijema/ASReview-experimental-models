@@ -34,7 +34,7 @@ setup(
             'ft_sbert = asreviewcontrib.models:FullTextSBERTModel',
             'wide_doc2vec = asreviewcontrib.models:wide_doc2vec',
             "multilingual = asreviewcontrib.models:MultilingualSentenceTransformer",
-            "labse = asreviewcontrib.models:LaBSE",
+            "LaBSE = asreviewcontrib.models:LaBSE",
         ],
         'asreview.models.balance': [
             # define balance strategy algorithms
