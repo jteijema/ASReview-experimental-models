@@ -2,12 +2,12 @@ from setuptools import setup
 from setuptools import find_namespace_packages
 
 setup(
-    name='asreview-template-model-extension',
+    name='JTeijema-asreview-models',
     version='1.0',
-    description='Example classifier extension',
-    url='https://github.com/asreview/asreview',
-    author='ASReview team',
-    author_email='asreview@uu.nl',
+    description='JTeijema-asreview-models',
+    url='https://github.com/JTeijema/JTeijema-asreview-models',
+    author='JTeijema',
+    author_email='j.j.teijema@uu.nl',
     classifiers=[
         'Development Status :: 4 - Beta',
         'License :: OSI Approved :: MIT License',
@@ -19,14 +19,21 @@ setup(
     packages=find_namespace_packages(include=['asreviewcontrib.*']),
     python_requires='~=3.6',
     install_requires=[
-        'asreview>=1.0'
+        'asreview>=1.0',
+        'xgboost',
+        'sentence_transformers',
+        'gensim'
     ],
     entry_points={
         'asreview.models.classifiers': [
-            'nb_example = asreviewcontrib.models:NaiveBayesDefaultParamsModel',
+            'xgboost = asreviewcontrib.models.xgboost:XGBoost',
         ],
         'asreview.models.feature_extraction': [
-            # define feature_extraction algorithms
+            'ft-sbert = asreviewcontrib.models:FullTextSBERTModel',
+            'wide_doc2vec = asreviewcontrib.models.wide_doc2vec:wide_doc2vec',
+            'bertje = asreviewcontrib.models:BERTje',
+            'scibert = asreviewcontrib.models:SciBert',
+            "multilingual = asreviewcontrib.models.distiluse_base_multilingual:MultilingualSentenceTransformer",
         ],
         'asreview.models.balance': [
             # define balance strategy algorithms

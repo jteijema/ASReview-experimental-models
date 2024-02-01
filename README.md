@@ -1,38 +1,56 @@
-# Template for extending ASReview with new model
+# README for ASReview Extension Plugin: Comprehensive Model Suite
+## Overview
 
-ASReview has support for extensions, which enable you to seamlessly integrate
-your own programs with the ASReview framework. These extensions can extend the
-software with new classifiers, query strategies, balance strategies, and feature
-extraction techniques. This template can be used to write such an extension
-(add a new SKLearn naive Bayes classifier with default settings in this case).
+This plugin for ASReview provides a diverse suite of models, expanding the
+capabilities of the ASReview software for automated systematic reviews. The
+plugin integrates several advanced classifiers and feature extraction
+techniques, enabling users to leverage a broad range of algorithms for their
+systematic review processes.
 
-See the section [Extensions](https://asreview.readthedocs.io/en/latest/extensions_dev.html) on ReadTheDocs for more information on writing extensions.
+### Included Models
 
-## Getting started
+XGBoost: A highly efficient and scalable implementation of gradient boosting.
 
-Click the `Use this template` button and add/modify the algorithms. Install your new classifier with
+ALL-MPNet-Base-v2 (Hier. Mean): An advanced transformer-based model optimized for
+semantic understanding with hierarchical mean pooling.
 
+DistilUSE-Base-Multilingual-Cased-v2: A multilingual transformer-based model,
+offering robust performance across various languages.
+
+LaBSE: Language-agnostic BERT Sentence Embedding model, excellent for semantic
+similarity and retrieval tasks in multiple languages.
+
+FastText: A powerful text representation and classification model, particularly
+effective for tasks involving large vocabularies and rich text data.
+
+Word2Vec + DAN (Deep Averaging Network): Combines the Word2Vec embeddings with a
+Deep Averaging Network for effective text classification.
+
+SciBert: A language model based on BERT, trained on scientific text
+
+## Installation
+
+To install this plugin, use one of the following method:
 ```bash
-pip install .
+pip install git+https://github.com/jteijema/JTeijema-asreview-models.git
 ```
-
-or
-
-```bash
-pip install git+https://github.com/{USER_NAME}/{REPO_NAME}.git
-```
-
-and replace `{USER_NAME}` and `{REPO_NAME}` by your own details.
 
 ## Usage
 
-The new classifier `nb_example` is defined in
-[`asreviewcontrib/models/nb_default_param.py`](asreviewcontrib/models/nb_default_param.py) and can be used in a simulation.
+Once installed, the models from this plugin can be used in ASReview simulations.
+For example, to use the XGBoost model, run:
 
 ```bash
-asreview simulate example_data_file.csv -m nb_example
+asreview simulate example_data_file.csv -m xgboost
 ```
+
+Replace xgboost with the appropriate model identifier to use other models.
+
+## Compatibility
+
+This plugin is compatible with the latest version of ASReview. Ensure that your
+ASReview installation is up-to-date to avoid compatibility issues.
 
 ## License
 
-MIT license
+This ASReview plugin is released under the MIT License. See the LICENSE file for more details.
