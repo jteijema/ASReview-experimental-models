@@ -10,6 +10,7 @@ class XGBoost(BaseTrainClassifier):
     """
 
     name = "xgboost"
+    label = "XGBoost"
 
     def __init__(self):
 

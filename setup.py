@@ -26,12 +26,12 @@ setup(
     ],
     entry_points={
         'asreview.models.classifiers': [
-            'xgboost = asreviewcontrib.models.xgboost:XGBoost',
+            'xgboost = asreviewcontrib.models:XGBoost',
         ],
         'asreview.models.feature_extraction': [
-            'ft-sbert = asreviewcontrib.models:FullTextSBERTModel',
-            'wide_doc2vec = asreviewcontrib.models.wide_doc2vec:wide_doc2vec',
-            "multilingual = asreviewcontrib.models.distiluse_base_multilingual:MultilingualSentenceTransformer",
+            'ft_sbert = asreviewcontrib.models:FullTextSBERTModel',
+            'wide_doc2vec = asreviewcontrib.models:wide_doc2vec',
+            "multilingual = asreviewcontrib.models:MultilingualSentenceTransformer",
         ],
         'asreview.models.balance': [
             # define balance strategy algorithms

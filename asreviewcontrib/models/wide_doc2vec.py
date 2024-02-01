@@ -24,6 +24,7 @@ def _transform_text(model, corpus):
 
 class wide_doc2vec(BaseFeatureExtraction):
     name = "wide_doc2vec"
+    label = "Doc2Vec (wide)"
 
     def __init__(self,
                  *args,
