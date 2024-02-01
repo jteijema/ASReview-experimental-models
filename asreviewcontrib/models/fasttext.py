@@ -4,10 +4,7 @@ from pathlib import Path
 import numpy as np
 from gensim.models import KeyedVectors
 from asreview.models.feature_extraction.base import BaseFeatureExtraction
-from asreview.models.classifiers.base import BaseTrainClassifier
 from asreview.utils import get_data_home
-import fasttext
-from scipy.sparse import csr_matrix
 
 class FastTextFeatureExtractor(BaseFeatureExtraction):
     name = "fasttext"
