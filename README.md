@@ -42,6 +42,8 @@ Doc2Vec (120 vector version): A powerful text representation and classification
 model, particularly effective for tasks involving large vocabularies and rich
 text data.
 
+Spacy: Uses en_core_web_md model from Spacy to extract features from text data.
+
 ## Installation
 
 To install this plugin, use one of the following method:

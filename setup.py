@@ -25,6 +25,7 @@ setup(
         'gensim',
         'scikeras',
         'fasttext',
+        'spacy'
     ],
     entry_points={
         'asreview.models.classifiers': [
@@ -39,6 +40,7 @@ setup(
             "labse = asreviewcontrib.models:LaBSE",
             "fasttext = asreviewcontrib.models:FastTextFeatureExtractor",
             "onehot = asreviewcontrib.models:OneHot",
+            "spacy = asreviewcontrib.models:SpacyEmbeddingExtractor",
         ],
         'asreview.models.balance': [
             # define balance strategy algorithms
