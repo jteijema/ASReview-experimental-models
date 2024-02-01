@@ -7,7 +7,12 @@ class OneHot(BaseFeatureExtraction):
 
     def __init__(self):
         super().__init__()
-        self._model = CountVectorizer(binary=True, lowercase=True, ngram_range=(1, 3), max_df=0.9, min_df=5)
+
+    @property
+    def _model(self):
+        if not hasattr(self, "CV"):
+            self.CV = CountVectorizer(binary=True, lowercase=True, ngram_range=(1, 3), max_df=0.9, min_df=5)
+        return self.CV
 
     def fit(self, texts):
         """Fit the model to the texts."""
