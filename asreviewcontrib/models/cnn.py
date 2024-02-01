@@ -5,7 +5,7 @@ from tensorflow.keras import Sequential
 from tensorflow.keras import layers
 from tensorflow.keras import activations
 from tensorflow.keras import optimizers
-from keras.wrappers.scikit_learn import KerasClassifier
+from scikeras.wrappers import KerasClassifier
 from tensorflow.keras import callbacks
 from tensorflow.keras import backend
 
@@ -19,7 +19,7 @@ class Power_CNN(BaseTrainClassifier):
 
     def __init__(self, verbose=1, patience=15, min_delta=0.025):
         """Initialize the conv neural network model."""
-        super(POWER_CNN, self).__init__()
+        super(Power_CNN, self).__init__()
         self.patience = patience
         self._model = None
         self.min_delta = min_delta

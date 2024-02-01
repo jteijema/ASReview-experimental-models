@@ -22,12 +22,13 @@ setup(
         'asreview>=1.0',
         'xgboost',
         'sentence_transformers',
-        'gensim'
+        'gensim',
+        'scikeras'
     ],
     entry_points={
         'asreview.models.classifiers': [
             'xgboost = asreviewcontrib.models:XGBoost',
-            'power_cnn = asreviewcontrib.models:POWER_CNN',
+            'power_cnn = asreviewcontrib.models:Power_CNN',
         ],
         'asreview.models.feature_extraction': [
             'ft_sbert = asreviewcontrib.models:FullTextSBERTModel',
