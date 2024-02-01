@@ -7,6 +7,8 @@ plugin integrates several advanced classifiers and feature extraction
 techniques, enabling users to leverage a broad range of algorithms for their
 systematic review processes.
 
+> ! HIGHLY EXPERIMENTAL !
+
 ### Included Models
 
 XGBoost: A highly efficient and scalable implementation of gradient boosting.
