@@ -3,7 +3,7 @@ from asreview.models.feature_extraction.base import BaseFeatureExtraction
 
 
 class LaBSE(BaseFeatureExtraction):
-    name = "LaBSE"
+    name = "labse"
     label = "LaBSE Transformer (max_seq_length: 256)"
 
     def transform(self, texts):

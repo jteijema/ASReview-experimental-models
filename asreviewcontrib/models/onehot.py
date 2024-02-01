@@ -2,7 +2,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from asreview.models.feature_extraction.base import BaseFeatureExtraction
 
 class OneHot(BaseFeatureExtraction):
-    name = "OneHot"
+    name = "onehot"
     label = "OneHot"
 
     def __init__(self):
