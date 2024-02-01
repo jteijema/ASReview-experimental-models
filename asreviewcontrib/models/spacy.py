@@ -4,7 +4,7 @@ from asreview.models.feature_extraction.base import BaseFeatureExtraction
 
 class SpacyEmbeddingExtractor(BaseFeatureExtraction):
     name = "spacy"
-    label = "SpaCy Embedding Extractor"
+    label = "SpaCy (en_core_web_lg)"
 
     def __init__(self):
         super().__init__()
