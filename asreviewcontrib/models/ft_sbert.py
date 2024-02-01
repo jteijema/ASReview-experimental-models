@@ -6,7 +6,7 @@ from tqdm import tqdm
 class FullTextSBERTModel(BaseFeatureExtraction):
     """Full Text Sentence BERT model."""
 
-    name = "ft-sbert"
+    name = "ft_sbert"
     label = "Full Text Sentence BERT"
 
     def __init__(
