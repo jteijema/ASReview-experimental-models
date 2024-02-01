@@ -43,6 +43,9 @@ Spacy: Uses `en_core_web_md` model from Spacy to extract features from text data
 Word2Vec: A powerful text representation and classification model, based on
 `word2vec-google-news-300`.
 
+Dynamic_nn: A neural network model that uses a dynamic architecture. Every
+factor 10 increase in the number of samples, the number of layers is increased.
+
 ## Installation
 
 To install this plugin, use one of the following method:

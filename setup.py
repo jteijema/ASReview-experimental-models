@@ -31,6 +31,7 @@ setup(
         'asreview.models.classifiers': [
             'xgboost = asreviewcontrib.models:XGBoost',
             'power_cnn = asreviewcontrib.models:Power_CNN',
+            'dynamic_nn = asreviewcontrib.models:DynamicNNClassifier',
         ],
         'asreview.models.feature_extraction': [
             'ft_sbert = asreviewcontrib.models:FullTextSBERTModel',

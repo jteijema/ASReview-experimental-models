@@ -8,3 +8,4 @@ from .fasttext import FastTextFeatureExtractor
 from .onehot import OneHot
 from .spacy import SpacyEmbeddingExtractor
 from .word2vec import Word2VecModel
+from .dynamic_nn import DynamicNNClassifier

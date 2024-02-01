@@ -37,7 +37,7 @@ class Power_CNN(BaseTrainClassifier):
         self._model.fit(
             _format(X),
             y,
-            batch_size=ceil(X.shape[0]/20),
+            batch_size=32,
             epochs=100,
             shuffle=True,
             callbacks=[callback],
