@@ -29,7 +29,7 @@ class MultilingualSentenceTransformer(BaseFeatureExtraction):
         model = SentenceTransformer(
             "sentence-transformers/distiluse-base-multilingual-cased-v2"
         )
-        print("Max sequence length:", self.model.max_seq_length)-
+        print("Max sequence length:", self.model.max_seq_length)
         print(
             "Encoding texts using the multilingual SentenceTransformer model, this may take a while..."
         )
