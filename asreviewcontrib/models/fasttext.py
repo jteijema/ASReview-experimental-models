@@ -8,11 +8,11 @@ from asreview.utils import get_data_home
 
 class FastTextFeatureExtractor(BaseFeatureExtraction):
     name = "fasttext"
-    label = "FastText (crawl-300d-2M.vec)"
+    label = "FastText (wiki-news-300d-1M-subword.vec)"
 
     EMBEDDING_EN = {
-        "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-english/crawl-300d-2M.vec.zip",
-        "name": "crawl-300d-2M.vec",
+        "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-english/wiki-news-300d-1M-subword.vec.zip",
+        "name": "wiki-news-300d-1M-subword.vec",
     }
 
     @property
@@ -31,7 +31,7 @@ class FastTextFeatureExtractor(BaseFeatureExtraction):
             self.download_embedding(data_home)
         else:
             print("Embedding file found.")
-        print("Loading 4GB embedding file to memory.")
+        print("Loading 2.2GB embedding file to memory.")
         return KeyedVectors.load_word2vec_format(embedding_fp, binary=False)
 
     def download_embedding(self, data_home):

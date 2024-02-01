@@ -29,7 +29,8 @@ OneHot: A simple baseline model that uses one-hot encoding for feature
 extraction.
 
 FastText: A powerful text representation and classification model, particularly
-effective for tasks involving large vocabularies and rich text data.
+effective for tasks involving large vocabularies and rich text data. Uses
+`wiki-news-300d-1M-subword.vec`.
 
 Convolutional Neural Network: A deep learning model that uses convolutional and
 pooling layers to extract features from text data.
