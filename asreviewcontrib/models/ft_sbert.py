@@ -7,7 +7,7 @@ class FullTextSBERTModel(BaseFeatureExtraction):
     """Full Text Sentence BERT model."""
 
     name = "ft_sbert"
-    label = "Full Text Sentence BERT"
+    label = "Full Text Sentence BERT (max_seq_length: INF)"
 
     def __init__(
         self,

@@ -3,3 +3,4 @@ from .multilingual import MultilingualSentenceTransformer
 from .wide_doc2vec import wide_doc2vec
 from .xgboost import XGBoost
 from .cnn import Power_CNN
+from .labse import LaBSE

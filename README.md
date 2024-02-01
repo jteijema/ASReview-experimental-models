@@ -18,7 +18,8 @@ semantic understanding with hierarchical mean pooling. Note, max sequence length
 is 384.
 
 DistilUSE-Base-Multilingual-Cased-v2: A multilingual transformer-based model,
-offering robust performance across various languages.
+offering robust performance across various languages. Note, max sequence length
+is 128.
 
 LaBSE: Language-agnostic BERT Sentence Embedding model, excellent for semantic
 similarity and retrieval tasks in multiple languages. Note, max sequence length
