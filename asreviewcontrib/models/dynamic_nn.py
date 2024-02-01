@@ -27,7 +27,7 @@ class DynamicNNClassifier(BaseTrainClassifier):
     name = "dynamic_nn"
     label = "Dynamic Neural Network"
 
-    def __init__(self, verbose=1, patience=5, min_delta=0.01):
+    def __init__(self, verbose=0, patience=5, min_delta=0.01):
         super().__init__()
         self.patience = patience
         self.min_delta = min_delta
