@@ -11,7 +11,7 @@ from scipy.sparse import csr_matrix
 
 class FastTextFeatureExtractor(BaseFeatureExtraction):
     name = "fasttext"
-    label = "FastText Feature Extractor (crawl-300d-2M.vec)"
+    label = "FastText (crawl-300d-2M.vec)"
 
     EMBEDDING_EN = {
         "url": "https://dl.fbaipublicfiles.com/fasttext/vectors-english/crawl-300d-2M.vec.zip",
@@ -77,6 +77,7 @@ class FastTextFeatureExtractor(BaseFeatureExtraction):
     def clear_model(self):
         if hasattr(self, "_model"):
             del self._model
+
 
 class FastTextClassifier(BaseTrainClassifier):
     """
