@@ -30,6 +30,7 @@ setup(
         'asreview.models.classifiers': [
             'xgboost = asreviewcontrib.models:XGBoost',
             'power_cnn = asreviewcontrib.models:Power_CNN',
+            "fasttext = asreviewcontrib.models:FastTextClassifier",
         ],
         'asreview.models.feature_extraction': [
             'ft_sbert = asreviewcontrib.models:FullTextSBERTModel',
@@ -37,6 +38,7 @@ setup(
             "multilingual = asreviewcontrib.models:MultilingualSentenceTransformer",
             "LaBSE = asreviewcontrib.models:LaBSE",
             "fasttext = asreviewcontrib.models:FastTextFeatureExtractor",
+            "OneHot = asreviewcontrib.models:OneHot",
         ],
         'asreview.models.balance': [
             # define balance strategy algorithms

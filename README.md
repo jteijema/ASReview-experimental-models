@@ -25,11 +25,22 @@ LaBSE: Language-agnostic BERT Sentence Embedding model, excellent for semantic
 similarity and retrieval tasks in multiple languages. Note, max sequence length
 is 256.
 
+OneHot: A simple baseline model that uses one-hot encoding for feature
+extraction.
+
 FastText: A powerful text representation and classification model, particularly
-effective for tasks involving large vocabularies and rich text data.
+effective for tasks involving large vocabularies and rich text data. (Both FE
+and Classification)
 
 Word2Vec + DAN (Deep Averaging Network): Combines the Word2Vec embeddings with a
 Deep Averaging Network for effective text classification.
+
+Convolutional Neural Network: A deep learning model that uses convolutional and
+pooling layers to extract features from text data.
+
+Doc2Vec (120 vector version): A powerful text representation and classification
+model, particularly effective for tasks involving large vocabularies and rich
+text data.
 
 ## Installation
 
