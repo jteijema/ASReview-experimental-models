@@ -29,8 +29,7 @@ OneHot: A simple baseline model that uses one-hot encoding for feature
 extraction.
 
 FastText: A powerful text representation and classification model, particularly
-effective for tasks involving large vocabularies and rich text data. (Both FE
-and Classification).
+effective for tasks involving large vocabularies and rich text data.
 
 Convolutional Neural Network: A deep learning model that uses convolutional and
 pooling layers to extract features from text data.
@@ -69,4 +68,5 @@ ASReview installation is up-to-date to avoid compatibility issues.
 
 ## License
 
-This ASReview plugin is released under the MIT License. See the LICENSE file for more details.
+This ASReview plugin is released under the MIT License. See the LICENSE file for
+more details.
