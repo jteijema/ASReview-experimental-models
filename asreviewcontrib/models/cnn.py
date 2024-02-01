@@ -26,6 +26,11 @@ class Power_CNN(BaseTrainClassifier):
         self.verbose = verbose
 
     def fit(self, X, y):
+        max_features = 1000
+
+        if X.shape[1] > max_features:
+            raise ValueError(f"Feature size too large: {X.shape[1]} features. Maximum allowed is {max_features}.")
+        
         self._model = KerasClassifier(_create_dense_nn_model(X.shape[1]))
         callback = callbacks.EarlyStopping(
             min_delta=self.min_delta,
