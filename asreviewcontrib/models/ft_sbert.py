@@ -32,7 +32,15 @@ class FullTextSBERTModel(BaseFeatureExtraction):
         encoded_texts = []
 
         for text in tqdm(texts):
+            # if text is "", add a zero vector
+            if text == "":
+                encoded_texts.append(np.zeros(self.model.get_sentence_embedding_dimension()))
+                continue
+
             segments = list(self.split_text(text, self.model.max_seq_length))
+
+            # if any segments are empty, remove the segment
+            segments = [segment for segment in segments if segment != ""]
 
             segment_embeddings = self.model.encode(segments, show_progress_bar=False)
 
