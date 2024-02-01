@@ -31,8 +31,6 @@ setup(
         'asreview.models.feature_extraction': [
             'ft-sbert = asreviewcontrib.models:FullTextSBERTModel',
             'wide_doc2vec = asreviewcontrib.models.wide_doc2vec:wide_doc2vec',
-            'bertje = asreviewcontrib.models:BERTje',
-            'scibert = asreviewcontrib.models:SciBert',
             "multilingual = asreviewcontrib.models.distiluse_base_multilingual:MultilingualSentenceTransformer",
         ],
         'asreview.models.balance': [

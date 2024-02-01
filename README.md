@@ -26,8 +26,6 @@ effective for tasks involving large vocabularies and rich text data.
 Word2Vec + DAN (Deep Averaging Network): Combines the Word2Vec embeddings with a
 Deep Averaging Network for effective text classification.
 
-SciBert: A language model based on BERT, trained on scientific text
-
 ## Installation
 
 To install this plugin, use one of the following method:
