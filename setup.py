@@ -25,13 +25,15 @@ setup(
         'gensim',
         'scikeras',
         'fasttext',
-        'spacy'
+        'spacy',
+        'scikit-learn'
     ],
     entry_points={
         'asreview.models.classifiers': [
             'xgboost = asreviewcontrib.models:XGBoost',
             'power_cnn = asreviewcontrib.models:Power_CNN',
             'dynamic_nn = asreviewcontrib.models:DynamicNNClassifier',
+            'adaboost = asreviewcontrib.models:AdaBoost',
         ],
         'asreview.models.feature_extraction': [
             'ft_sbert = asreviewcontrib.models:FullTextSBERTModel',
