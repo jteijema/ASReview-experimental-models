@@ -23,7 +23,8 @@ setup(
         'xgboost',
         'sentence_transformers',
         'gensim',
-        'scikeras'
+        'scikeras',
+        'fasttext',
     ],
     entry_points={
         'asreview.models.classifiers': [
@@ -35,6 +36,7 @@ setup(
             'wide_doc2vec = asreviewcontrib.models:wide_doc2vec',
             "multilingual = asreviewcontrib.models:MultilingualSentenceTransformer",
             "LaBSE = asreviewcontrib.models:LaBSE",
+            "fasttext = asreviewcontrib.models:FastTextFeatureExtractor",
         ],
         'asreview.models.balance': [
             # define balance strategy algorithms
