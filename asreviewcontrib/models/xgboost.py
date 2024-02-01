@@ -13,6 +13,5 @@ class XGBoost(BaseTrainClassifier):
     label = "XGBoost"
 
     def __init__(self):
-
         super().__init__()
         self._model = xgb.XGBClassifier()
