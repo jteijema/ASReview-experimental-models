@@ -14,13 +14,15 @@ systematic review processes.
 XGBoost: A highly efficient and scalable implementation of gradient boosting.
 
 ALL-MPNet-Base-v2 (Hier. Mean): An advanced transformer-based model optimized for
-semantic understanding with hierarchical mean pooling.
+semantic understanding with hierarchical mean pooling. Note, max sequence length
+is 384.
 
 DistilUSE-Base-Multilingual-Cased-v2: A multilingual transformer-based model,
 offering robust performance across various languages.
 
 LaBSE: Language-agnostic BERT Sentence Embedding model, excellent for semantic
-similarity and retrieval tasks in multiple languages.
+similarity and retrieval tasks in multiple languages. Note, max sequence length
+is 256.
 
 FastText: A powerful text representation and classification model, particularly
 effective for tasks involving large vocabularies and rich text data.
