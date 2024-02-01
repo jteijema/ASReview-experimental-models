@@ -30,10 +30,7 @@ extraction.
 
 FastText: A powerful text representation and classification model, particularly
 effective for tasks involving large vocabularies and rich text data. (Both FE
-and Classification)
-
-Word2Vec + DAN (Deep Averaging Network): Combines the Word2Vec embeddings with a
-Deep Averaging Network for effective text classification.
+and Classification).
 
 Convolutional Neural Network: A deep learning model that uses convolutional and
 pooling layers to extract features from text data.
@@ -42,7 +39,10 @@ Doc2Vec (120 vector version): A powerful text representation and classification
 model, particularly effective for tasks involving large vocabularies and rich
 text data.
 
-Spacy: Uses en_core_web_md model from Spacy to extract features from text data.
+Spacy: Uses `en_core_web_md` model from Spacy to extract features from text data.
+
+Word2Vec: A powerful text representation and classification model, based on
+`word2vec-google-news-300`.
 
 ## Installation
 

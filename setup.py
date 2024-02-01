@@ -41,6 +41,7 @@ setup(
             "fasttext = asreviewcontrib.models:FastTextFeatureExtractor",
             "onehot = asreviewcontrib.models:OneHot",
             "spacy = asreviewcontrib.models:SpacyEmbeddingExtractor",
+            "word2vec = asreviewcontrib.models:Word2VecModel",
         ],
         'asreview.models.balance': [
             # define balance strategy algorithms

@@ -7,3 +7,4 @@ from .labse import LaBSE
 from .fasttext import FastTextFeatureExtractor, FastTextClassifier
 from .onehot import OneHot
 from .spacy import SpacyEmbeddingExtractor
+from .word2vec import Word2VecModel
