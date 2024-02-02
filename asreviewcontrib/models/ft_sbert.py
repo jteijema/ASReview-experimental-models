@@ -32,22 +32,21 @@ class FullTextSBERTModel(BaseFeatureExtraction):
         encoded_texts = []
 
         for text in tqdm(texts):
-            # if text is "", add a zero vector
-            if text == "":
-                encoded_texts.append(np.zeros(self.model.get_sentence_embedding_dimension()))
-                continue
-
             segments = list(self.split_text(text, self.model.max_seq_length))
-
-            # if any segments are empty, remove the segment
             segments = [segment for segment in segments if segment != ""]
 
             segment_embeddings = self.model.encode(segments, show_progress_bar=False)
 
-            if len(segments) == 1:
-                    encoded_texts.append(segment_embeddings[0])
-                    continue
+            if len(segment_embeddings) == 0:
+                encoded_texts.append(np.zeros(self.model.get_sentence_embedding_dimension()))
+                continue
 
             encoded_texts.append(np.mean(segment_embeddings, axis=0))
+
+            if encoded_texts[-1].shape != (768,):
+                print("Encoded text shape:", encoded_texts[-1].shape)
+                print("Encoded text:", encoded_texts[-1])
+                print("Text:", text)
+                print("Segments:", segments)
 
         return np.array(encoded_texts)
