@@ -47,6 +47,10 @@ Word2Vec: A powerful text representation and classification model, based on
 Dynamic_nn: A neural network model that uses a dynamic architecture. Every
 factor 10 increase in the number of samples, the number of layers is increased.
 
+KNN: A simple baseline model that uses K-Nearest Neighbors for classification.
+
+AdaBoost: A simple baseline model that uses AdaBoost for classification.
+
 ### Keywords
 Classifiers Available:
 
@@ -54,6 +58,7 @@ Classifiers Available:
     power_cnn
     dynamic_nn
     adaboost
+    knn
 
 Feature Extractors Available:
 
