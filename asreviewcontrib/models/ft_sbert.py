@@ -44,9 +44,6 @@ class FullTextSBERTModel(BaseFeatureExtraction):
             encoded_texts.append(np.mean(segment_embeddings, axis=0))
 
             if encoded_texts[-1].shape != (768,):
-                print("Encoded text shape:", encoded_texts[-1].shape)
-                print("Encoded text:", encoded_texts[-1])
-                print("Text:", text)
-                print("Segments:", segments)
+                raise ValueError("The shape of the encoded text is not (768,)")
 
         return np.array(encoded_texts)
