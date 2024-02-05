@@ -2,11 +2,11 @@ from setuptools import setup
 from setuptools import find_namespace_packages
 
 setup(
-    name='JTeijema-asreview-models',
+    name='ASReview-experimental-models',
     version='1.0',
-    description='JTeijema-asreview-models',
-    url='https://github.com/JTeijema/JTeijema-asreview-models',
-    author='JTeijema',
+    description='ASReview experimental models plugin',
+    url='https://github.com/JTeijema/ASReview-experimental-models',
+    author='Jelle Jasper Teijema',
     author_email='j.j.teijema@uu.nl',
     classifiers=[
         'Development Status :: 4 - Beta',

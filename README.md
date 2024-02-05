@@ -1,4 +1,4 @@
-# README for ASReview Extension Plugin: Comprehensive Model Suite
+# README for ASReview-experimental-models: Comprehensive Model Suite
 ## Overview
 
 This plugin for ASReview provides a diverse suite of models, expanding the
