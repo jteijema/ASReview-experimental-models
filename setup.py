@@ -3,7 +3,7 @@ from setuptools import find_namespace_packages
 
 setup(
     name='ASReview-experimental-models',
-    version='1.0',
+    version='0.3',
     description='ASReview experimental models plugin',
     url='https://github.com/JTeijema/ASReview-experimental-models',
     author='Jelle Jasper Teijema',
