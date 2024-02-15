@@ -38,7 +38,7 @@ setup(
             'random = asreviewcontrib.models:RandomClassifier',
         ],
         'asreview.models.feature_extraction': [
-            'ft_sbert = asreviewcontrib.models:FullTextSBERTModel',
+            'ft-sbert = asreviewcontrib.models:FullTextSBERTModel',
             'wide_doc2vec = asreviewcontrib.models:wide_doc2vec',
             "multilingual = asreviewcontrib.models:MultilingualSentenceTransformer",
             "labse = asreviewcontrib.models:LaBSE",

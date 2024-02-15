@@ -65,7 +65,7 @@ Classifiers Available:
 
 Feature Extractors Available:
 
-    ft_sbert
+    ft-sbert
     wide_doc2vec
     multilingual
     labse

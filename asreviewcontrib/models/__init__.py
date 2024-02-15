@@ -1,4 +1,3 @@
-from .ft_sbert import FullTextSBERTModel
 from .multilingual import MultilingualSentenceTransformer
 from .wide_doc2vec import wide_doc2vec
 from .xgboost import XGBoost
@@ -12,3 +11,4 @@ from .dynamic_nn import DynamicNNClassifier
 from .adaboost import AdaBoost
 from .knn import KNN
 from .random import RandomClassifier
+from .ftsbert import FullTextSBERTModel
