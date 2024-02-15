@@ -78,7 +78,7 @@ Feature Extractors Available:
 
 To install this plugin, use one of the following method:
 ```bash
-pip install git+https://github.com/jteijema/JTeijema-asreview-models.git
+pip install git+https://github.com/jteijema/ASReview-experimental-models.git
 ```
 
 ## Usage
