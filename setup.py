@@ -35,6 +35,7 @@ setup(
             'dynamic_nn = asreviewcontrib.models:DynamicNNClassifier',
             'adaboost = asreviewcontrib.models:AdaBoost',
             'knn = asreviewcontrib.models:KNN',
+            'random = asreviewcontrib.models:RandomClassifier',
         ],
         'asreview.models.feature_extraction': [
             'ft_sbert = asreviewcontrib.models:FullTextSBERTModel',

@@ -51,6 +51,8 @@ KNN: A simple baseline model that uses K-Nearest Neighbors for classification.
 
 AdaBoost: A simple baseline model that uses AdaBoost for classification.
 
+Random: A simple baseline model that uses random classification.
+
 ### Keywords
 Classifiers Available:
 
@@ -59,6 +61,7 @@ Classifiers Available:
     dynamic_nn
     adaboost
     knn
+    random
 
 Feature Extractors Available:
 
