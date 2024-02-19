@@ -3,7 +3,7 @@ from setuptools import find_namespace_packages
 
 setup(
     name='ASReview-experimental-models',
-    version='0.4',
+    version='0.4.1',
     description='ASReview experimental models plugin',
     url='https://github.com/JTeijema/ASReview-experimental-models',
     author='Jelle Jasper Teijema',
@@ -26,7 +26,8 @@ setup(
         'scikeras',
         'fasttext',
         'spacy',
-        'scikit-learn'
+        'scikit-learn',
+        'tensorflow'
     ],
     entry_points={
         'asreview.models.classifiers': [
